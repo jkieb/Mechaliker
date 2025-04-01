@@ -1771,21 +1771,21 @@ p {
 	background: #e91327;
 }
 
-.white_fonts p,
-.white_fonts h1,
-.white_fonts h2,
-.white_fonts h3,
-.white_fonts h4,
-.white_fonts h5,
-.white_fonts h6,
-.white_fonts ul,
-.white_fonts ul li,
-.white_fonts ul li a,
-.white_fonts ul i,
-.white_fonts .post_info i,
-.white_fonts div,
-.white_fonts a.read_more {
-	color: #fff !important;
+.black_fonts p,
+.black_fonts h1,
+.black_fonts h2,
+.black_fonts h3,
+.black_fonts h4,
+.black_fonts h5,
+.black_fonts h6,
+.black_fonts ul,
+.black_fonts ul li,
+.black_fonts ul li a,
+.black_fonts ul i,
+.black_fonts .post_info i,
+.black_fonts div,
+.black_fonts a.read_more {
+	color: #000000 !important;
 }
 
 .red_bg .about-main-info a {

@@ -42,8 +42,22 @@
     <!-- LOADER -->
     <div id="preloader">
         <div class="loader">
-            <img src="images/loader.gif" alt="#" />
+            <img src="images/spinning_gear.gif" alt="#" />
         </div>
+        <style>
+            @keyframes moveWheel {
+                0% {
+                    transform: translateX(0);
+                }
+                100% {
+                    transform: translateX(100%);
+                }
+            }
+
+            .loader img {
+                animation: moveWheel 5s linear infinite;
+            }
+        </style>
     </div>
     <!-- end loader -->
     <!-- END LOADER -->
@@ -62,8 +76,8 @@
                     <ul class="navbar-nav">
                         <li><a class="nav-link active" href="index.html">Home</a></li>
                         <li><a class="nav-link" href="about.html">About</a></li>
-                        <li><a class="nav-link" href="courses.html">Courses</a></li>
-                        <li><a class="nav-link" href="reaserch.html">Reaserch</a></li>
+                        <li><a class="nav-link" href="courses.html">Kurse</a></li>
+                        <li><a class="nav-link" href="career.html">Karriere</a></li>
 						<li><a class="nav-link" href="news.html">News</a></li>
 						<li><a class="nav-link" href="contact.html">Contact us</a></li>
                     </ul>
@@ -84,13 +98,12 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="pogoSlider" id="js-main-slider">
-                    <div class="pogoSlider-slide" style="background-image:url(images/banner_img.png);">
+                    <div class="pogoSlider-slide" style="background-image:url(images/slider.png);">
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="slide_text">
-                                        <h3><span span class="theme_color">You only have know one thing</span><br>you can learn anything</h3>
-                                        <h4>Free Educations</h4>
+                                        <h3><span class="theme_color">Meistere Mechanik</span><br><span style="color: black;">Wir glauben an dich</span></h3>
                                         <br>
                                         <div class="full center">
 										    <a class="contact_bt" href="courses.html">Start a Course</a>
@@ -100,13 +113,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="pogoSlider-slide" style="background-image:url(images/banner_img.png);">
+                    <div class="pogoSlider-slide" style="background-image:url(images/slider.png);">
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="slide_text">
-                                        <h3><span span class="theme_color">You only have know one thing</span><br>you can learn anything</h3>
-                                        <h4>Free Educations</h4>
+                                        <h3><span class="theme_color">Meistere Mechanik</span><br><span style="color: black;">Wir glauben an dich</span></h3>
                                         <br>
                                         <div class="full center">
 										    <a class="contact_bt" href="courses.html">Start a Course</a>
@@ -241,7 +253,7 @@
                 <div class="col-md-6">
                     <div class="full">
                         <div class="heading_main text_align_left">
-						   <h2><span>Reaserch</span></h2>
+						   <h2><span>Karriere</span></h2>
                         </div>
 						<div class="full">
 						  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
