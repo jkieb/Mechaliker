@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" width="96" height="96" role="img" aria-label="Statik: Fachwerk auf zwei Lagern">
+  <g fill="none" stroke="#006699" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M14 62 L34 26 L54 62 L74 26"/>
+    <path d="M14 62 H74"/>
+    <path d="M34 26 H74"/>
+  </g>
+  <g fill="#006699">
+    <circle cx="14" cy="62" r="4.6"/><circle cx="54" cy="62" r="4.6"/>
+    <circle cx="34" cy="26" r="4.6"/><circle cx="74" cy="26" r="4.6"/>
+  </g>
+  <g fill="none" stroke="#0d1b2a" stroke-width="3.4" stroke-linejoin="round">
+    <path d="M14 64 L6 78 H22 z"/>
+    <path d="M74 30 L66 44 H82 z"/>
+  </g>
+  <g stroke="#8fa8b8" stroke-width="3" stroke-linecap="round">
+    <line x1="2" y1="84" x2="26" y2="84"/><line x1="62" y1="50" x2="86" y2="50"/>
+  </g>
+  <path d="M54 60 V34" fill="none" stroke="#f0a202" stroke-width="4" stroke-linecap="round"/>
+  <path d="M54 32 l-5 9 h10 z" fill="#f0a202"/>
+</svg>

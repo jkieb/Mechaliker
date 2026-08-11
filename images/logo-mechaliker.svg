@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 56" width="300" height="56" role="img" aria-label="Mechaliker – Mechanik-Nachhilfe TU Wien">
+  <g transform="translate(28,26)">
+    <g fill="#006699">
+      <g id="tooth-set">
+        <rect x="-3.6" y="-24" width="7.2" height="9" rx="1.6"/>
+        <rect x="-3.6" y="-24" width="7.2" height="9" rx="1.6" transform="rotate(45)"/>
+        <rect x="-3.6" y="-24" width="7.2" height="9" rx="1.6" transform="rotate(90)"/>
+        <rect x="-3.6" y="-24" width="7.2" height="9" rx="1.6" transform="rotate(135)"/>
+        <rect x="-3.6" y="-24" width="7.2" height="9" rx="1.6" transform="rotate(180)"/>
+        <rect x="-3.6" y="-24" width="7.2" height="9" rx="1.6" transform="rotate(225)"/>
+        <rect x="-3.6" y="-24" width="7.2" height="9" rx="1.6" transform="rotate(270)"/>
+        <rect x="-3.6" y="-24" width="7.2" height="9" rx="1.6" transform="rotate(315)"/>
+      </g>
+      <circle cx="0" cy="0" r="17.5"/>
+    </g>
+    <circle cx="0" cy="0" r="13" fill="#ffffff"/>
+    <!-- Lachen: zwei Augen + Schmunzeln -->
+    <circle cx="-4.6" cy="-3.6" r="1.9" fill="#0d1b2a"/>
+    <circle cx="4.6" cy="-3.6" r="1.9" fill="#0d1b2a"/>
+    <path d="M-6.6 2.4a6.6 6.6 0 0 0 13.2 0" fill="none" stroke="#f0a202" stroke-width="2.6" stroke-linecap="round"/>
+  </g>
+  <text x="60" y="27" font-family="Georgia, 'Times New Roman', serif" font-size="27" font-weight="700" letter-spacing="0.2" fill="#0d1b2a">Mecha<tspan fill="#006699">liker</tspan></text>
+  <text x="61" y="43" font-family="Verdana, Geneva, sans-serif" font-size="9.4" letter-spacing="2.1" fill="#5a6b7b">MECHANIK-NACHHILFE · TU WIEN</text>
+</svg>
