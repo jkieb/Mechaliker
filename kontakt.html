@@ -8,11 +8,43 @@
     <meta name="description" content="Gratis Probeeinheit anfragen: Schreib uns, welche Lehrveranstaltung dich beschäftigt und wann dein Prüfungstermin ist. Antwort innerhalb von 24 Stunden.">
     <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="css/mechaliker.css">
-    <script>document.documentElement.classList.add("js-anim");</script>
+    <script>
+        (function (d) {
+            d.classList.add("js-anim");
+            try {
+                if (sessionStorage.getItem("mechaliker-baustelle") === "ok") { d.classList.add("uc-passed"); }
+            } catch (e) { /* Privatmodus: Sperre bleibt eben stehen */ }
+        }(document.documentElement));
+    </script>
 </head>
 
 <body>
     <a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+    <!-- Baustellen-Sperre: bleibt stehen, bis sie bewusst weggeklickt wird -->
+    <div class="uc-gate" id="ucGate" role="dialog" aria-modal="true" aria-labelledby="ucTitle">
+        <div class="uc-box">
+            <img class="uc-gear" src="images/favicon.svg" alt="" width="74" height="74">
+            <p class="uc-kicker">Baustelle · Under Construction</p>
+            <h1 id="ucTitle">Hier wird noch gerechnet.</h1>
+            <p>Diese Seite von <b>Mechaliker</b> ist eine Vorschau und noch nicht in Betrieb.
+                Schau dich gern um – nur verlass dich bitte auf nichts, was hier steht.</p>
+            <ul class="uc-list">
+                <li>Preise, Termine, Kennzahlen und Bewertungen sind Platzhalter</li>
+                <li>Das Kontaktformular verschickt noch nichts</li>
+                <li>Adresse, Telefonnummer und Impressum sind erfunden</li>
+            </ul>
+            <button class="btn btn--gold" type="button" data-uc-enter>Trotzdem hineinschauen</button>
+            <p class="uc-motto"><span class="motto">s<b>TU</b>nde<b>M</b>it<b>E</b>inemla<b>CH</b>en</span></p>
+            <p class="uc-hint">Der Hinweis kommt beim nächsten Besuch wieder.</p>
+            <noscript>
+                <p class="uc-hint"><b>JavaScript ist deaktiviert.</b> Die Vorschau lässt sich damit nicht
+                    öffnen – das ist Absicht, solange die Seite im Aufbau ist.</p>
+            </noscript>
+        </div>
+    </div>
+
+    <div class="uc-banner"><span>🚧 Vorschau im Aufbau – alle Angaben auf dieser Seite sind Platzhalter.</span></div>
 
     <div class="topbar">
         <div class="wrap">
