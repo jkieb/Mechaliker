@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kurse &amp; Termine | Mechaliker – Mechanik-Nachhilfe TU Wien</title>
+    <meta name="description" content="Statik, Elastostatik, Dynamik, Schwingungen, Crashkurse und Technische Mechanik für HTL und FH – alle Kurse, Inhalte und Termine der Mechaliker.">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/mechaliker.css">
+    <script>document.documentElement.classList.add("js-anim");</script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+    <div class="topbar">
+        <div class="wrap">
+            <ul>
+                <li>📍 <span>Wiedner Hauptstraße 8, 1040 Wien</span></li>
+                <li class="topbar-hide">🕘 <span>Mo–Fr 09:00–21:00, Sa 10:00–16:00</span></li>
+            </ul>
+            <ul>
+                <li>✉️ <a href="mailto:hallo@mechaliker.at">hallo@mechaliker.at</a></li>
+                <li>☎️ <a href="tel:+436601234567">+43 660 123 45 67</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <header class="site-header" id="siteHeader">
+        <div class="wrap">
+            <a class="brand" href="index.html">
+                <img src="images/logo-mechaliker.svg" alt="Mechaliker – Mechanik-Nachhilfe TU Wien" width="232" height="44">
+            </a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="Menü öffnen">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav" id="mainNav" aria-label="Hauptnavigation">
+                <ul>
+                    <li><a href="index.html">Start</a></li>
+                    <li><a class="is-active" href="kurse.html">Kurse</a></li>
+                    <li><a href="index.html#ablauf">Ablauf</a></li>
+                    <li><a href="tutoren.html">Tutor:innen</a></li>
+                    <li><a href="preise.html">Preise</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li class="nav-cta"><a href="kontakt.html">Gratis Probeeinheit</a></li>
+                </ul>
+            </nav>
+            <div class="header-cta">
+                <a class="btn btn--gold btn--sm" href="kontakt.html">Gratis Probeeinheit</a>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+
+        <section class="page-head">
+            <div class="wrap">
+                <p class="crumbs"><a href="index.html">Start</a> › Kurse</p>
+                <span class="eyebrow">Kursangebot</span>
+                <h1>Jeder Kurs endet mit einem gerechneten Beispiel.</h1>
+                <p>Keine Vorlesung zum zweiten Mal, sondern Rechnen mit Begleitung. Such dir das Fach aus, das dich
+                    gerade beschäftigt – die Inhalte stehen offen da, damit du weißt, worauf du dich einlässt.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="wrap">
+                <div class="filterbar" data-filterbar role="group" aria-label="Kurse filtern">
+                    <button type="button" data-filter="alle" class="is-active" aria-pressed="true">Alle Kurse</button>
+                    <button type="button" data-filter="tu" aria-pressed="false">TU Wien</button>
+                    <button type="button" data-filter="intensiv" aria-pressed="false">Crashkurs</button>
+                    <button type="button" data-filter="schule" aria-pressed="false">HTL &amp; FH</button>
+                </div>
+
+                <div class="grid grid--3">
+
+                    <article class="card" id="statik" data-kategorie="tu">
+                        <div class="card-icon"><img src="images/icon-statik.svg" alt="" width="46" height="46"></div>
+                        <span class="card-tag">Mechanik 1 · Statik</span>
+                        <h3>Statik &amp; Fachwerke</h3>
+                        <p>Alles, was still steht: Kräfte, Momente, Lager, Reibung. Wer hier sauber arbeitet, hat es in
+                            Mechanik 2 deutlich leichter.</p>
+                        <ul class="card-list">
+                            <li>Kraft- und Momentengleichgewicht in Ebene und Raum</li>
+                            <li>Lagerreaktionen, statische Bestimmtheit, Gelenke</li>
+                            <li>Fachwerke: Knotenpunkt- und Rittersches Schnittverfahren</li>
+                            <li>Schnittgrößen N, Q, M – zeichnen und kontrollieren</li>
+                            <li>Haft- und Gleitreibung, Seilreibung</li>
+                            <li>Schwerpunkte und Streckenlasten</li>
+                        </ul>
+                        <div class="card-foot">
+                            <span class="card-price">25 €<small> / Einheit</small></span>
+                            <a class="btn btn--ghost btn--sm" href="kontakt.html?kurs=statik">Anfragen</a>
+                        </div>
+                    </article>
+
+                    <article class="card" id="festigkeit" data-kategorie="tu">
+                        <div class="card-icon"><img src="images/icon-festigkeit.svg" alt="" width="46" height="46"></div>
+                        <span class="card-tag">Mechanik 2 · Elastostatik</span>
+                        <h3>Festigkeitslehre</h3>
+                        <p>Jetzt verformt sich das Ding. Spannungen, Dehnungen und die Frage, ab wann das Bauteil
+                            nachgibt.</p>
+                        <ul class="card-list">
+                            <li>Zug, Druck, Schub, Torsion</li>
+                            <li>Flächenträgheitsmomente und Steiner-Anteil</li>
+                            <li>Biegespannung, Biegelinie, Superposition</li>
+                            <li>Mohrscher Spannungskreis und Hauptspannungen</li>
+                            <li>Vergleichsspannungen nach Mises und Tresca</li>
+                            <li>Knickung nach Euler, statisch unbestimmte Systeme</li>
+                        </ul>
+                        <div class="card-foot">
+                            <span class="card-price">25 €<small> / Einheit</small></span>
+                            <a class="btn btn--ghost btn--sm" href="kontakt.html?kurs=festigkeit">Anfragen</a>
+                        </div>
+                    </article>
+
+                    <article class="card" id="dynamik" data-kategorie="tu">
+                        <div class="card-icon"><img src="images/icon-dynamik.svg" alt="" width="46" height="46"></div>
+                        <span class="card-tag">Mechanik 3 · Dynamik</span>
+                        <h3>Kinematik &amp; Kinetik</h3>
+                        <p>Bewegung mit Ursache. Der Teil, bei dem die meisten aufgeben – und der mit System der
+                            berechenbarste ist.</p>
+                        <ul class="card-list">
+                            <li>Kinematik des Punktes und des starren Körpers</li>
+                            <li>Momentanpol, Relativbewegung, Coriolis</li>
+                            <li>Impuls- und Drallsatz sauber angesetzt</li>
+                            <li>Massenträgheitsmomente und Steiner</li>
+                            <li>Arbeits- und Energiesatz, Stoßvorgänge</li>
+                            <li>Lagrange-Gleichungen 2. Art</li>
+                        </ul>
+                        <div class="card-foot">
+                            <span class="card-price">28 €<small> / Einheit</small></span>
+                            <a class="btn btn--ghost btn--sm" href="kontakt.html?kurs=dynamik">Anfragen</a>
+                        </div>
+                    </article>
+
+                    <article class="card" id="schwingungen" data-kategorie="tu">
+                        <div class="card-icon"><img src="images/icon-schwingungen.svg" alt="" width="46" height="46"></div>
+                        <span class="card-tag">Vertiefung</span>
+                        <h3>Schwingungen &amp; Maschinendynamik</h3>
+                        <p>Für alle, die nach Mechanik 3 weitermachen – oder deren Übungsblätter plötzlich Eigenwerte
+                            verlangen.</p>
+                        <ul class="card-list">
+                            <li>Freie, gedämpfte und erzwungene Schwingungen</li>
+                            <li>Vergrößerungsfunktion und Resonanz</li>
+                            <li>Mehrmassenschwinger, Eigenformen, Eigenfrequenzen</li>
+                            <li>Auswuchten, kritische Drehzahl</li>
+                            <li>Schwingungsisolierung in der Praxis</li>
+                        </ul>
+                        <div class="card-foot">
+                            <span class="card-price">28 €<small> / Einheit</small></span>
+                            <a class="btn btn--ghost btn--sm" href="kontakt.html?kurs=schwingungen">Anfragen</a>
+                        </div>
+                    </article>
+
+                    <article class="card" id="crashkurs" data-kategorie="intensiv">
+                        <div class="card-icon"><img src="images/icon-crashkurs.svg" alt="" width="46" height="46"></div>
+                        <span class="card-tag card-tag--gold">Intensiv</span>
+                        <h3>Prüfungs-Crashkurs</h3>
+                        <p>Das Wochenende vor dem Termin. Zwölf Stunden, in denen wir genau die Angabentypen rechnen,
+                            die erfahrungsgemäß kommen.</p>
+                        <ul class="card-list">
+                            <li>Samstag &amp; Sonntag, je 6 Stunden inkl. Pausen</li>
+                            <li>Kompaktskript und eigene Formelsammlung</li>
+                            <li>Probeklausur unter echten Zeitbedingungen</li>
+                            <li>Korrektur mit persönlicher Rückmeldung</li>
+                            <li>Aufzeichnung zwei Wochen abrufbar</li>
+                        </ul>
+                        <div class="card-foot">
+                            <span class="card-price">149 €<small> / Wochenende</small></span>
+                            <a class="btn btn--primary btn--sm" href="#termine">Termine</a>
+                        </div>
+                    </article>
+
+                    <article class="card" id="htl" data-kategorie="schule">
+                        <div class="card-icon"><img src="images/icon-htl.svg" alt="" width="46" height="46"></div>
+                        <span class="card-tag">HTL &amp; FH</span>
+                        <h3>Technische Mechanik</h3>
+                        <p>Für Maturant:innen, FH-Studierende und alle, die den Sprung an die TU planen und ihre Basis
+                            festigen wollen.</p>
+                        <ul class="card-list">
+                            <li>Vorbereitung auf Schularbeit, RWA und Matura</li>
+                            <li>Auffrischung Vektorrechnung und Trigonometrie</li>
+                            <li>Statik und Festigkeitslehre auf FH-Niveau</li>
+                            <li>Brückenkurs HTL → TU Wien vor dem ersten Semester</li>
+                        </ul>
+                        <div class="card-foot">
+                            <span class="card-price">22 €<small> / Einheit</small></span>
+                            <a class="btn btn--ghost btn--sm" href="kontakt.html?kurs=htl">Anfragen</a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Termine -->
+        <section class="section section--mist" id="termine">
+            <div class="wrap">
+                <div class="head head--center reveal">
+                    <span class="eyebrow">Crashkurs-Termine</span>
+                    <h2>Immer das Wochenende vor dem Prüfungstermin</h2>
+                    <p class="lead">Die Plätze sind auf zwölf Personen begrenzt, damit jede Frage drankommt. Anmeldung
+                        über das Kontaktformular, Zahlung erst nach der Bestätigung.</p>
+                </div>
+
+                <div class="grid grid--3">
+                    <article class="card reveal">
+                        <span class="card-tag card-tag--gold">Wintersemester</span>
+                        <h3>Mechanik 1</h3>
+                        <p><b>Sa/So, 24.–25. Jänner</b><br>09:00–16:00 Uhr, Hybrid</p>
+                        <ul class="card-list">
+                            <li>Fachwerke &amp; Schnittgrößen im Fokus</li>
+                            <li>Probeklausur am Sonntagnachmittag</li>
+                            <li>Noch 5 von 12 Plätzen frei</li>
+                        </ul>
+                        <div class="card-foot">
+                            <span class="card-price">149 €</span>
+                            <a class="btn btn--primary btn--sm" href="kontakt.html?kurs=crashkurs-m1">Platz sichern</a>
+                        </div>
+                    </article>
+
+                    <article class="card reveal">
+                        <span class="card-tag card-tag--gold">Wintersemester</span>
+                        <h3>Mechanik 2</h3>
+                        <p><b>Sa/So, 31. Jänner – 1. Februar</b><br>09:00–16:00 Uhr, Hybrid</p>
+                        <ul class="card-list">
+                            <li>Biegelinie &amp; Vergleichsspannungen</li>
+                            <li>Mohrscher Kreis in 45 Minuten</li>
+                            <li>Noch 8 von 12 Plätzen frei</li>
+                        </ul>
+                        <div class="card-foot">
+                            <span class="card-price">149 €</span>
+                            <a class="btn btn--primary btn--sm" href="kontakt.html?kurs=crashkurs-m2">Platz sichern</a>
+                        </div>
+                    </article>
+
+                    <article class="card reveal">
+                        <span class="card-tag">Sommersemester</span>
+                        <h3>Mechanik 3</h3>
+                        <p><b>Sa/So, 20.–21. Juni</b><br>09:00–16:00 Uhr, Online</p>
+                        <ul class="card-list">
+                            <li>Drallsatz und Lagrange am Stück</li>
+                            <li>Stoßvorgänge mit Rechenrezept</li>
+                            <li>Anmeldung ab April möglich</li>
+                        </ul>
+                        <div class="card-foot">
+                            <span class="card-price">149 €</span>
+                            <a class="btn btn--ghost btn--sm" href="kontakt.html?kurs=crashkurs-m3">Vormerken</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Material -->
+        <section class="section">
+            <div class="wrap">
+                <div class="split">
+                    <div class="reveal">
+                        <span class="eyebrow">Was du mitbekommst</span>
+                        <h2>Nach jeder Einheit hast du etwas in der Hand</h2>
+                        <p>Wir schicken dir die Mitschrift als PDF – inklusive der Skizzen, die wir gemeinsam gezeichnet
+                            haben. So musst du während der Einheit nicht zwischen Zuhören und Abschreiben wählen.</p>
+                        <ul class="facts">
+                            <li>
+                                <span class="num">📝</span>
+                                <span><b>Mitschrift als PDF</b>
+                                <span class="txt">Spätestens am nächsten Tag im Postfach, mit allen Zwischenschritten.</span></span>
+                            </li>
+                            <li>
+                                <span class="num">📚</span>
+                                <span><b>Aufgabensammlung nach Thema</b>
+                                <span class="txt">Sortiert nach Schwierigkeit, mit ausführlichen Lösungswegen statt nur Ergebnissen.</span></span>
+                            </li>
+                            <li>
+                                <span class="num">🧮</span>
+                                <span><b>Formelsammlung, die du selbst befüllst</b>
+                                <span class="txt">Denn was man einmal selbst aufgeschrieben hat, findet man in der Prüfung wieder.</span></span>
+                            </li>
+                            <li>
+                                <span class="num">✉️</span>
+                                <span><b>Kurze Fragen zwischendurch</b>
+                                <span class="txt">Eine Frage per Mail zwischen zwei Einheiten kostet nichts.</span></span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="split-media reveal">
+                        <img src="images/online-tafel.svg" alt="Digitales Whiteboard mit Fachwerk und Rechenweg" width="640" height="480">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--tight">
+            <div class="wrap">
+                <div class="cta-band reveal">
+                    <div>
+                        <h2>Nicht sicher, welcher Kurs passt?</h2>
+                        <p>Schick uns den TISS-Link deiner Lehrveranstaltung – wir sagen dir ehrlich, was wir abdecken
+                            und was nicht.</p>
+                    </div>
+                    <div class="btn-row">
+                        <a class="btn btn--gold" href="kontakt.html">Kurz nachfragen</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="skyline" aria-hidden="true">
+        <img src="images/wien-skyline.svg" alt="" style="width:100%;height:130px;object-fit:cover;object-position:bottom">
+    </div>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <div class="footer-grid">
+                <div>
+                    <img class="flogo" src="images/logo-mechaliker-light.svg" alt="Mechaliker" width="240" height="45">
+                    <p>Mechanik-Nachhilfe von Studierenden für Studierende – seit 2019 am Karlsplatz und online.
+                        <span class="motto">s<b>TU</b>nde <b>M</b>it <b>E</b>inem la<b>CH</b>en</span>.</p>
+                </div>
+                <div>
+                    <h4>Kurse</h4>
+                    <ul class="footer-links">
+                        <li><a href="kurse.html#statik">Statik</a></li>
+                        <li><a href="kurse.html#festigkeit">Festigkeitslehre</a></li>
+                        <li><a href="kurse.html#dynamik">Dynamik</a></li>
+                        <li><a href="kurse.html#schwingungen">Schwingungen</a></li>
+                        <li><a href="kurse.html#crashkurs">Crashkurs</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Mechaliker</h4>
+                    <ul class="footer-links">
+                        <li><a href="tutoren.html">Tutor:innen</a></li>
+                        <li><a href="preise.html">Preise</a></li>
+                        <li><a href="index.html#ablauf">Ablauf</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="newsletter">
+                    <h4>Termin-Erinnerung</h4>
+                    <p>Ein Mail vor jedem Prüfungstermin – mit den Crashkurs-Terminen. Kein Werbemüll.</p>
+                    <form onsubmit="return false;">
+                        <label for="nl" style="position:absolute;left:-9999px">E-Mail-Adresse</label>
+                        <input id="nl" type="email" placeholder="deine@student.tuwien.ac.at" required>
+                        <button type="submit">Merken</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© <span id="year">2026</span> Mechaliker – Nachhilfe in Mechanik für TU, FH und HTL.</p>
+                <ul>
+                    <li><a href="kontakt.html#impressum">Impressum</a></li>
+                    <li><a href="kontakt.html#datenschutz">Datenschutz</a></li>
+                    <li><a href="kontakt.html">AGB</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <button class="to-top" id="toTop" type="button" aria-label="Nach oben">↑</button>
+    <script src="js/mechaliker.js"></script>
+</body>
+
+</html>

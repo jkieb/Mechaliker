@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" width="96" height="96" role="img" aria-label="Schwingungen: Feder-Masse-Dämpfer-System">
+  <rect x="8" y="8" width="80" height="7" rx="2.5" fill="#0d1b2a"/>
+  <g stroke="#8fa8b8" stroke-width="3" stroke-linecap="round">
+    <line x1="14" y1="4" x2="6" y2="12"/><line x1="30" y1="4" x2="22" y2="12"/>
+    <line x1="46" y1="4" x2="38" y2="12"/><line x1="62" y1="4" x2="54" y2="12"/>
+    <line x1="78" y1="4" x2="70" y2="12"/><line x1="92" y1="4" x2="84" y2="12"/>
+  </g>
+  <!-- Feder -->
+  <path d="M28 15 v6 l-10 5 l20 8 l-20 8 l20 8 l-20 8 l10 5 v5"
+        fill="none" stroke="#006699" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+  <!-- Dämpfer -->
+  <g fill="none" stroke="#006699" stroke-width="4" stroke-linecap="round">
+    <line x1="68" y1="15" x2="68" y2="32"/>
+    <rect x="58" y="32" width="20" height="18" rx="2" fill="#e3f0f8"/>
+    <line x1="60" y1="42" x2="76" y2="42"/>
+    <line x1="68" y1="42" x2="68" y2="62"/>
+  </g>
+  <!-- Masse -->
+  <rect x="20" y="62" width="56" height="22" rx="5" fill="#006699"/>
+  <text x="48" y="78" font-family="Verdana, Geneva, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#ffffff">m</text>
+  <g stroke="#f0a202" stroke-width="4" stroke-linecap="round">
+    <line x1="48" y1="88" x2="48" y2="94"/>
+  </g>
+  <path d="M48 96 l-6 -10 h12 z" fill="#f0a202"/>
+</svg>

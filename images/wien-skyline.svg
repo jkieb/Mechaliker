@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 170" width="1200" height="170" preserveAspectRatio="xMidYMax slice" role="img"
+     aria-label="Silhouette von Wien: TU-Hauptgebäude, Karlskirche, Stephansdom und Riesenrad">
+  <g fill="#083a54">
+    <!-- TU Hauptgebäude, Karlsplatz -->
+    <path d="M60 170v-52h8v-8l40-22 40 22v8h8v52z"/>
+    <g fill="#ffffff" opacity="0.28">
+      <rect x="76" y="128" width="8" height="30"/><rect x="92" y="128" width="8" height="30"/>
+      <rect x="108" y="128" width="8" height="30"/><rect x="124" y="128" width="8" height="30"/>
+      <rect x="140" y="128" width="8" height="30"/>
+    </g>
+
+    <!-- Karlskirche -->
+    <path d="M232 170v-46h12v-40h-6l14-16 14 16h-6v40h12v46z"/>
+    <path d="M356 170v-46h12v-40h-6l14-16 14 16h-6v40h12v46z"/>
+    <path d="M268 170v-44c0-24 14-40 32-46 18 6 32 22 32 46v44z"/>
+    <path d="M300 60c14 6 24 20 24 34h-48c0-14 10-28 24-34z"/>
+    <rect x="296" y="42" width="8" height="18"/>
+    <path d="M300 32l5 10h-10z"/>
+    <path d="M272 106h56l-28-16z"/>
+
+    <!-- Stephansdom -->
+    <path d="M596 170v-70h56v70z"/>
+    <path d="M592 100l32-18 32 18z"/>
+    <path d="M660 170l14-96 14 96z"/>
+    <path d="M674 66l4-30 4 30z"/>
+    <rect x="676" y="26" width="4" height="12"/>
+
+    <!-- Wohnblöcke -->
+    <path d="M430 170v-40h50v40zM496 170v-56h44v56zM720 170v-48h60v48zM796 170v-34h40v34z"/>
+    <g fill="#ffffff" opacity="0.28">
+      <rect x="440" y="140" width="8" height="10"/><rect x="456" y="140" width="8" height="10"/>
+      <rect x="506" y="124" width="8" height="10"/><rect x="522" y="124" width="8" height="10"/>
+      <rect x="732" y="132" width="8" height="10"/><rect x="750" y="132" width="8" height="10"/>
+    </g>
+
+    <!-- Riesenrad -->
+    <path d="M960 170l40-58 40 58h-14l-26-40-26 40z"/>
+    <path d="M1000 40a62 62 0 1 1-.1 0zm0 10a52 52 0 1 0 .1 0z"/>
+    <path d="M996 44h8v116h-8z"/>
+    <path d="M942 98h116v8H942z" />
+    <g transform="rotate(45 1000 102)"><path d="M996 44h8v116h-8z"/><path d="M942 98h116v8H942z"/></g>
+    <circle cx="1000" cy="102" r="9"/>
+    <g>
+      <rect x="994" y="30" width="12" height="12" rx="2"/>
+      <rect x="994" y="162" width="12" height="8" rx="2"/>
+      <rect x="930" y="96" width="12" height="12" rx="2"/>
+      <rect x="1058" y="96" width="12" height="12" rx="2"/>
+    </g>
+
+    <!-- Bäume -->
+    <path d="M186 170v-14h-4a14 14 0 1 1 12 0h-4v14zM868 170v-12h-4a12 12 0 1 1 10 0h-4v12z"/>
+    <rect x="0" y="166" width="1200" height="4"/>
+  </g>
+</svg>

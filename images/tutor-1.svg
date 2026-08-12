@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="Illustriertes Portrait einer Tutorin mit Brille">
+  <defs><clipPath id="t1clip"><circle cx="100" cy="100" r="100"/></clipPath></defs>
+  <g clip-path="url(#t1clip)">
+    <rect width="200" height="200" fill="#e3f0f8"/>
+    <g stroke="#cbe0ee" stroke-width="2" fill="none">
+      <path d="M0 40H200M0 80H200M0 120H200M0 160H200M40 0V200M80 0V200M120 0V200M160 0V200"/>
+    </g>
+    <path d="M100 118c34 0 60 24 64 56v26H36v-26c4-32 30-56 64-56z" fill="#006699"/>
+    <path d="M100 118c8 0 16 1 23 4l-23 26-23-26c7-3 15-4 23-4z" fill="#ffffff" opacity="0.9"/>
+    <ellipse cx="100" cy="82" rx="34" ry="38" fill="#f2c9a0"/>
+    <path d="M64 78c-2-28 16-42 36-42s38 14 36 42c-4-12-12-18-22-20-10 12-38 8-44 2-4 4-5 10-6 18z" fill="#3b2f2a"/>
+    <g fill="#0d1b2a"><circle cx="88" cy="82" r="3.6"/><circle cx="112" cy="82" r="3.6"/></g>
+    <g fill="none" stroke="#0d1b2a" stroke-width="3">
+      <circle cx="88" cy="82" r="12"/><circle cx="112" cy="82" r="12"/><line x1="100" y1="82" x2="100" y2="82"/>
+      <path d="M76 78h-9M124 78h9M100 82h0"/><line x1="100" y1="80" x2="100" y2="80"/>
+    </g>
+    <path d="M89 99a13 13 0 0 0 22 0" fill="none" stroke="#b5654a" stroke-width="3.4" stroke-linecap="round"/>
+    <path d="M100 70v0" stroke="#0d1b2a"/>
+  </g>
+  <circle cx="100" cy="100" r="98" fill="none" stroke="#006699" stroke-width="4"/>
+</svg>

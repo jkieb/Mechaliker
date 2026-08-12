@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kontakt &amp; Probeeinheit | Mechaliker – Mechanik-Nachhilfe TU Wien</title>
+    <meta name="description" content="Gratis Probeeinheit anfragen: Schreib uns, welche Lehrveranstaltung dich beschäftigt und wann dein Prüfungstermin ist. Antwort innerhalb von 24 Stunden.">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/mechaliker.css">
+    <script>document.documentElement.classList.add("js-anim");</script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+    <div class="topbar">
+        <div class="wrap">
+            <ul>
+                <li>📍 <span>Wiedner Hauptstraße 8, 1040 Wien</span></li>
+                <li class="topbar-hide">🕘 <span>Mo–Fr 09:00–21:00, Sa 10:00–16:00</span></li>
+            </ul>
+            <ul>
+                <li>✉️ <a href="mailto:hallo@mechaliker.at">hallo@mechaliker.at</a></li>
+                <li>☎️ <a href="tel:+436601234567">+43 660 123 45 67</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <header class="site-header" id="siteHeader">
+        <div class="wrap">
+            <a class="brand" href="index.html">
+                <img src="images/logo-mechaliker.svg" alt="Mechaliker – Mechanik-Nachhilfe TU Wien" width="232" height="44">
+            </a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="Menü öffnen">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav" id="mainNav" aria-label="Hauptnavigation">
+                <ul>
+                    <li><a href="index.html">Start</a></li>
+                    <li><a href="kurse.html">Kurse</a></li>
+                    <li><a href="index.html#ablauf">Ablauf</a></li>
+                    <li><a href="tutoren.html">Tutor:innen</a></li>
+                    <li><a href="preise.html">Preise</a></li>
+                    <li><a class="is-active" href="kontakt.html">Kontakt</a></li>
+                    <li class="nav-cta"><a href="kontakt.html">Gratis Probeeinheit</a></li>
+                </ul>
+            </nav>
+            <div class="header-cta">
+                <a class="btn btn--gold btn--sm" href="#anfrage">Gratis Probeeinheit</a>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+
+        <section class="page-head">
+            <div class="wrap">
+                <p class="crumbs"><a href="index.html">Start</a> › Kontakt</p>
+                <span class="eyebrow">Kontakt</span>
+                <h1>Zwei Sätze reichen uns.</h1>
+                <p>Schreib uns, welche Lehrveranstaltung dich gerade ärgert und wann dein Prüfungstermin ist. Wir
+                    antworten innerhalb von 24 Stunden – meistens deutlich schneller.</p>
+            </div>
+        </section>
+
+        <!-- Formular + Kontaktdaten -->
+        <section class="section" id="anfrage">
+            <div class="wrap">
+                <div class="split">
+                    <div class="reveal">
+                        <span class="eyebrow">Anfrage</span>
+                        <h2>Gratis Probeeinheit anfragen</h2>
+                        <p>Unverbindlich, kostenlos und ohne dass du danach etwas buchen musst.</p>
+
+                        <div class="form-card" style="margin-top:26px">
+                            <div class="form-status" aria-live="polite"></div>
+
+                            <form action="php/form-process.php" method="post" data-validate novalidate>
+                                <div class="field-row">
+                                    <div class="field">
+                                        <label for="name">Wie heißt du? *</label>
+                                        <input id="name" name="name" type="text" autocomplete="name" required>
+                                        <span class="error"></span>
+                                    </div>
+                                    <div class="field">
+                                        <label for="email">E-Mail *</label>
+                                        <input id="email" name="email" type="email" autocomplete="email"
+                                               placeholder="deine@student.tuwien.ac.at" required>
+                                        <span class="error"></span>
+                                    </div>
+                                </div>
+
+                                <div class="field-row">
+                                    <div class="field">
+                                        <label for="kurs">Worum geht's? *</label>
+                                        <select id="kurs" name="kurs" required>
+                                            <option value="">Bitte auswählen</option>
+                                            <option value="statik">Mechanik 1 – Statik</option>
+                                            <option value="festigkeit">Mechanik 2 – Festigkeitslehre</option>
+                                            <option value="dynamik">Mechanik 3 – Dynamik</option>
+                                            <option value="schwingungen">Schwingungen &amp; Maschinendynamik</option>
+                                            <option value="crashkurs">Prüfungs-Crashkurs</option>
+                                            <option value="htl">Technische Mechanik (HTL/FH)</option>
+                                            <option value="mitarbeit">Ich möchte selbst unterrichten</option>
+                                            <option value="anderes">Etwas anderes</option>
+                                        </select>
+                                        <span class="error"></span>
+                                    </div>
+                                    <div class="field">
+                                        <label for="termin">Prüfungstermin (falls bekannt)</label>
+                                        <input id="termin" name="termin" type="date">
+                                        <span class="error"></span>
+                                    </div>
+                                </div>
+
+                                <div class="field">
+                                    <label for="format">Wie hättest du es gern?</label>
+                                    <select id="format" name="format">
+                                        <option value="egal">Egal – schlagt etwas vor</option>
+                                        <option value="online">Online mit geteiltem Whiteboard</option>
+                                        <option value="praesenz">Vor Ort in Wien</option>
+                                        <option value="gruppe">In einer Kleingruppe</option>
+                                        <option value="einzeln">Einzelunterricht</option>
+                                    </select>
+                                    <span class="error"></span>
+                                </div>
+
+                                <div class="field">
+                                    <label for="nachricht">Was hakt gerade? *</label>
+                                    <textarea id="nachricht" name="nachricht" required
+                                              placeholder="Zum Beispiel: Ich komme bei den Schnittgrößen durcheinander und schreibe in drei Wochen Mechanik 1."></textarea>
+                                    <span class="error"></span>
+                                </div>
+
+                                <div class="field">
+                                    <label class="check">
+                                        <input type="checkbox" name="dsgvo" required>
+                                        <span>Ich bin einverstanden, dass meine Angaben zur Bearbeitung der Anfrage
+                                            gespeichert werden. *</span>
+                                    </label>
+                                    <span class="error"></span>
+                                </div>
+
+                                <button class="btn btn--primary btn--block" type="submit">Anfrage abschicken</button>
+                                <p class="form-note">* Pflichtfelder · Wir geben nichts weiter und schicken keine
+                                    Werbung.</p>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="reveal">
+                        <div class="section--deep" style="border-radius:26px;padding:38px">
+                            <span class="eyebrow">Direkt erreichbar</span>
+                            <h2>Lieber ohne Formular?</h2>
+                            <p style="color:#b9d2e2">Ruf an oder schreib ein Mail – wir beißen nicht, und dumme Fragen
+                                gibt es bei uns bekanntlich keine.</p>
+
+                            <ul class="contact-tiles" style="margin-top:26px">
+                                <li>
+                                    <span class="ico">✉️</span>
+                                    <span><b>E-Mail</b><span><a href="mailto:hallo@mechaliker.at">hallo@mechaliker.at</a></span></span>
+                                </li>
+                                <li>
+                                    <span class="ico">☎️</span>
+                                    <span><b>Telefon &amp; WhatsApp</b><span><a href="tel:+436601234567">+43 660 123 45 67</a></span></span>
+                                </li>
+                                <li>
+                                    <span class="ico">📍</span>
+                                    <span><b>Lernraum</b><span>Wiedner Hauptstraße 8, 1040 Wien<br>4 Gehminuten vom Karlsplatz</span></span>
+                                </li>
+                                <li>
+                                    <span class="ico">🕘</span>
+                                    <span><b>Erreichbarkeit</b><span>Mo–Fr 09:00–21:00<br>Sa 10:00–16:00</span></span>
+                                </li>
+                            </ul>
+
+                            <p style="margin-top:26px">
+                                <span class="motto-chip"><span class="motto">s<b>TU</b>nde<b>M</b>it<b>E</b>inemla<b>CH</b>en</span></span>
+                            </p>
+                        </div>
+
+                        <div class="card reveal" style="margin-top:26px">
+                            <h3>Anfahrt</h3>
+                            <p>U1, U2 und U4 bis <b>Karlsplatz</b>, Ausgang Resselpark. Vom Hauptgebäude der TU Wien
+                                sind es rund vier Minuten zu Fuß die Wiedner Hauptstraße hinunter. Straßenbahn 1, 62
+                                und Badner Bahn halten ebenfalls direkt dort.</p>
+                            <p>Der Lernraum liegt im ersten Stock, Aufzug vorhanden. Klingle einfach bei
+                                „Mechaliker" – wir machen auf.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="section section--mist">
+            <div class="wrap">
+                <div class="head head--center reveal">
+                    <span class="eyebrow">Vor der Anfrage</span>
+                    <h2>Was oft noch unklar ist</h2>
+                </div>
+                <div class="faq">
+                    <details class="reveal" open>
+                        <summary>Wie schnell bekomme ich eine Antwort?</summary>
+                        <div class="answer">In der Regel am selben Tag, spätestens innerhalb von 24 Stunden. In den
+                            zwei Wochen vor den großen Prüfungsterminen kann es einen Tag länger dauern.</div>
+                    </details>
+                    <details class="reveal">
+                        <summary>Was passiert nach der Anfrage?</summary>
+                        <div class="answer">Wir melden uns mit zwei bis drei Terminvorschlägen und dem Namen der Person,
+                            die zu deinem Fach passt. Die erste Einheit ist gratis, danach entscheidest du.</div>
+                    </details>
+                    <details class="reveal">
+                        <summary>Kann ich auch für jemand anderen anfragen?</summary>
+                        <div class="answer">Klar – Eltern, WG-Mitbewohner:innen oder Lerngruppen fragen regelmäßig für
+                            andere an. Schreib einfach dazu, für wen es ist.</div>
+                    </details>
+                    <details class="reveal">
+                        <summary>Unterrichtet ihr auch auf Englisch?</summary>
+                        <div class="answer">Ja. Mehrere Tutor:innen unterrichten auf Englisch – gib es einfach im
+                            Nachrichtenfeld an.</div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- Impressum & Datenschutz -->
+        <section class="section">
+            <div class="wrap">
+                <div class="grid grid--2">
+                    <article class="card reveal" id="impressum">
+                        <span class="card-tag">Rechtliches</span>
+                        <h3>Impressum</h3>
+                        <p><b>Mechaliker – Nachhilfe für Mechanik</b><br>
+                            Wiedner Hauptstraße 8, 1040 Wien, Österreich</p>
+                        <p>E-Mail: <a href="mailto:hallo@mechaliker.at">hallo@mechaliker.at</a><br>
+                            Telefon: <a href="tel:+436601234567">+43 660 123 45 67</a></p>
+                        <p>Unternehmensgegenstand: Nachhilfe und Lernbegleitung.<br>
+                            Für den Inhalt verantwortlich: das Mechaliker-Team.</p>
+                        <p style="font-size:.86rem;color:var(--muted)">Hinweis: Diese Angaben sind Platzhalter für die
+                            Demo-Seite und vor dem Livegang durch die echten Unternehmensdaten (inkl. Rechtsform,
+                            Firmenbuchnummer und Gewerbebehörde) zu ersetzen.</p>
+                    </article>
+
+                    <article class="card reveal" id="datenschutz">
+                        <span class="card-tag">Rechtliches</span>
+                        <h3>Datenschutz in Kurzform</h3>
+                        <p>Wir verarbeiten nur, was du uns im Formular schickst: Name, E-Mail-Adresse, gewünschtes Fach
+                            und deine Nachricht. Das brauchen wir, um dir zu antworten und einen Termin zu vereinbaren.</p>
+                        <p>Es gibt keine Tracking-Cookies, keine Werbenetzwerke und keine externen Schriftarten oder
+                            Karten – diese Seite lädt ausschließlich Dateien vom eigenen Server.</p>
+                        <p>Deine Daten werden nicht weitergegeben. Auf Wunsch löschen wir sie sofort: kurze Mail
+                            genügt.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="skyline" aria-hidden="true">
+        <img src="images/wien-skyline.svg" alt="" style="width:100%;height:130px;object-fit:cover;object-position:bottom">
+    </div>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <div class="footer-grid">
+                <div>
+                    <img class="flogo" src="images/logo-mechaliker-light.svg" alt="Mechaliker" width="240" height="45">
+                    <p>Mechanik-Nachhilfe von Studierenden für Studierende – seit 2019 am Karlsplatz und online.
+                        <span class="motto">s<b>TU</b>nde <b>M</b>it <b>E</b>inem la<b>CH</b>en</span>.</p>
+                </div>
+                <div>
+                    <h4>Kurse</h4>
+                    <ul class="footer-links">
+                        <li><a href="kurse.html#statik">Statik</a></li>
+                        <li><a href="kurse.html#festigkeit">Festigkeitslehre</a></li>
+                        <li><a href="kurse.html#dynamik">Dynamik</a></li>
+                        <li><a href="kurse.html#schwingungen">Schwingungen</a></li>
+                        <li><a href="kurse.html#crashkurs">Crashkurs</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Mechaliker</h4>
+                    <ul class="footer-links">
+                        <li><a href="tutoren.html">Tutor:innen</a></li>
+                        <li><a href="preise.html">Preise</a></li>
+                        <li><a href="index.html#ablauf">Ablauf</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="newsletter">
+                    <h4>Termin-Erinnerung</h4>
+                    <p>Ein Mail vor jedem Prüfungstermin – mit den Crashkurs-Terminen. Kein Werbemüll.</p>
+                    <form onsubmit="return false;">
+                        <label for="nl" style="position:absolute;left:-9999px">E-Mail-Adresse</label>
+                        <input id="nl" type="email" placeholder="deine@student.tuwien.ac.at" required>
+                        <button type="submit">Merken</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© <span id="year">2026</span> Mechaliker – Nachhilfe in Mechanik für TU, FH und HTL.</p>
+                <ul>
+                    <li><a href="kontakt.html#impressum">Impressum</a></li>
+                    <li><a href="kontakt.html#datenschutz">Datenschutz</a></li>
+                    <li><a href="kontakt.html">AGB</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <button class="to-top" id="toTop" type="button" aria-label="Nach oben">↑</button>
+    <script src="js/mechaliker.js"></script>
+</body>
+
+</html>

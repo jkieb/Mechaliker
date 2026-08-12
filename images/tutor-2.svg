@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="Illustriertes Portrait eines Tutors mit Bart">
+  <defs><clipPath id="t2clip"><circle cx="100" cy="100" r="100"/></clipPath></defs>
+  <g clip-path="url(#t2clip)">
+    <rect width="200" height="200" fill="#fdf3dd"/>
+    <g stroke="#f2e2bd" stroke-width="2" fill="none">
+      <path d="M0 40H200M0 80H200M0 120H200M0 160H200M40 0V200M80 0V200M120 0V200M160 0V200"/>
+    </g>
+    <path d="M100 118c34 0 60 24 64 56v26H36v-26c4-32 30-56 64-56z" fill="#f0a202"/>
+    <path d="M100 118c8 0 16 1 23 4l-23 26-23-26c7-3 15-4 23-4z" fill="#ffffff" opacity="0.9"/>
+    <ellipse cx="100" cy="82" rx="34" ry="38" fill="#e8b98d"/>
+    <path d="M70 108c4 14 16 22 30 22s26-8 30-22c2 12-2 22-8 28-8 8-36 8-44 0-6-6-10-16-8-28z" fill="#4a3222"/>
+    <path d="M66 74c0-24 16-38 34-38s34 14 34 38c-6-16-18-22-34-22s-28 6-34 22z" fill="#4a3222"/>
+    <g fill="#0d1b2a"><circle cx="88" cy="80" r="3.8"/><circle cx="112" cy="80" r="3.8"/></g>
+    <g stroke="#4a3222" stroke-width="3.4" stroke-linecap="round" fill="none">
+      <path d="M80 68c4-3 10-3 14-1M120 68c-4-3-10-3-14-1"/>
+    </g>
+    <path d="M88 100a14 14 0 0 0 24 0" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <circle cx="100" cy="100" r="98" fill="none" stroke="#f0a202" stroke-width="4"/>
+</svg>

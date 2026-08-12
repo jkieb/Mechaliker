@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" width="640" height="480" role="img"
+     aria-label="Laptop mit digitalem Whiteboard: Fachwerk, Gleichungen und eine Sprechblase">
+  <defs>
+    <linearGradient id="otScreen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b4d70"/><stop offset="1" stop-color="#083a54"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="640" height="480" rx="26" fill="#f4f9fc"/>
+  <g stroke="#dcebf4" stroke-width="1.5" fill="none">
+    <path d="M0 60H640M0 120H640M0 180H640M0 240H640M0 300H640M0 360H640M0 420H640
+             M60 0V480M120 0V480M180 0V480M240 0V480M300 0V480M360 0V480M420 0V480M480 0V480M540 0V480M600 0V480"/>
+  </g>
+
+  <!-- Laptop -->
+  <rect x="96" y="96" width="448" height="272" rx="16" fill="#0d1b2a"/>
+  <rect x="110" y="110" width="420" height="236" rx="8" fill="url(#otScreen)"/>
+  <path d="M56 368h528l22 30a10 10 0 0 1-8 16H42a10 10 0 0 1-8-16z" fill="#12283a"/>
+  <rect x="268" y="376" width="104" height="9" rx="4.5" fill="#2a4a63"/>
+
+  <!-- Tafelinhalt: Fachwerk -->
+  <g stroke="#8fd3f4" stroke-width="3.4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M144 250 L184 186 L224 250 L264 186 L304 250"/>
+    <path d="M144 250 H304"/>
+    <path d="M184 186 H264"/>
+  </g>
+  <g fill="#ffffff">
+    <circle cx="144" cy="250" r="4.4"/><circle cx="224" cy="250" r="4.4"/><circle cx="304" cy="250" r="4.4"/>
+    <circle cx="184" cy="186" r="4.4"/><circle cx="264" cy="186" r="4.4"/>
+  </g>
+  <g stroke="#f5b700" stroke-width="3.6" stroke-linecap="round">
+    <line x1="224" y1="152" x2="224" y2="182"/>
+  </g>
+  <path d="M224 186 l-6 -12 h12 z" fill="#f5b700"/>
+  <path d="M136 254 l-10 16 h20 z" fill="none" stroke="#8fd3f4" stroke-width="3"/>
+  <path d="M296 254 l-10 16 h20 z" fill="none" stroke="#8fd3f4" stroke-width="3"/>
+
+  <!-- Tafelinhalt: Rechnung -->
+  <g font-family="Verdana, Geneva, sans-serif" font-size="17" fill="#cfe7f5">
+    <text x="348" y="164">ΣF&#8339; = 0</text>
+    <text x="348" y="196">ΣF&#8341; = 0</text>
+    <text x="348" y="228" fill="#f5b700">S₁ = −F/√2</text>
+    <text x="348" y="262" fill="#8fd3f4">✓ verstanden</text>
+  </g>
+  <line x1="336" y1="140" x2="336" y2="286" stroke="#2a5a78" stroke-width="2.5" stroke-dasharray="7 8"/>
+  <g stroke="#f5b700" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M344 240 h96"/>
+  </g>
+
+  <!-- Sprechblase -->
+  <g>
+    <path d="M436 44h140a20 20 0 0 1 20 20v46a20 20 0 0 1-20 20h-88l-26 24 4-24h-30a20 20 0 0 1-20-20V64a20 20 0 0 1 20-20z"
+          fill="#ffffff" stroke="#cfe0ec" stroke-width="2.5"/>
+    <g fill="#0d1b2a"><circle cx="486" cy="82" r="5"/><circle cx="516" cy="82" r="5"/></g>
+    <path d="M478 98a24 24 0 0 0 46 0" fill="none" stroke="#f0a202" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Kaffee -->
+  <g>
+    <path d="M60 300h44v34a18 18 0 0 1-18 18H78a18 18 0 0 1-18-18z" fill="#ffffff" stroke="#006699" stroke-width="3.5"/>
+    <path d="M104 308h12a12 12 0 0 1 0 24h-12" fill="none" stroke="#006699" stroke-width="3.5"/>
+    <path d="M68 300h28v10H68z" fill="#c47f00"/>
+    <g stroke="#9db8c9" stroke-width="3" stroke-linecap="round" fill="none">
+      <path d="M72 288c0-6 6-6 6-12M88 288c0-6 6-6 6-12"/>
+    </g>
+  </g>
+</svg>

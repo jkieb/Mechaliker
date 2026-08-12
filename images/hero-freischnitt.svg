@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 560" width="760" height="560" role="img"
+     aria-label="Blaupause: Balken auf zwei Lagern mit Streckenlast und Einzelkraft, darunter ein lächelndes Momentendiagramm">
+  <defs>
+    <pattern id="fsGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M20 0H0V20" fill="none" stroke="#d8e6ef" stroke-width="1"/>
+    </pattern>
+    <pattern id="fsGrid5" width="100" height="100" patternUnits="userSpaceOnUse">
+      <path d="M100 0H0V100" fill="none" stroke="#c3d8e6" stroke-width="1.4"/>
+    </pattern>
+    <pattern id="fsHatch" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="9" stroke="#9db8c9" stroke-width="2"/>
+    </pattern>
+    <linearGradient id="fsBeam" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0d7fb8"/>
+      <stop offset="1" stop-color="#006699"/>
+    </linearGradient>
+    <marker id="fsArrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L12 6 L0 12 z" fill="#f0a202"/>
+    </marker>
+    <marker id="fsDim" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 L12 6 L0 12 z" fill="#5a6b7b"/>
+    </marker>
+  </defs>
+
+  <rect width="760" height="560" rx="24" fill="#f4f9fc"/>
+  <rect width="760" height="560" rx="24" fill="url(#fsGrid)"/>
+  <rect width="760" height="560" rx="24" fill="url(#fsGrid5)"/>
+  <rect x="1" y="1" width="758" height="558" rx="24" fill="none" stroke="#cfe0ec" stroke-width="2"/>
+
+  <g font-family="Verdana, Geneva, sans-serif" fill="#33566d">
+    <text x="34" y="46" font-size="15" letter-spacing="3.4" fill="#7d95a7">FREISCHNITT · BLATT 01</text>
+
+    <!-- Streckenlast q -->
+    <g stroke="#f0a202" stroke-width="2.6" stroke-linecap="round">
+      <line x1="170" y1="118" x2="482" y2="118"/>
+      <line x1="176" y1="122" x2="176" y2="192" marker-end="url(#fsArrow)"/>
+      <line x1="228" y1="122" x2="228" y2="192" marker-end="url(#fsArrow)"/>
+      <line x1="280" y1="122" x2="280" y2="192" marker-end="url(#fsArrow)"/>
+      <line x1="332" y1="122" x2="332" y2="192" marker-end="url(#fsArrow)"/>
+      <line x1="384" y1="122" x2="384" y2="192" marker-end="url(#fsArrow)"/>
+      <line x1="436" y1="122" x2="436" y2="192" marker-end="url(#fsArrow)"/>
+      <line x1="476" y1="122" x2="476" y2="192" marker-end="url(#fsArrow)"/>
+    </g>
+    <text x="326" y="104" font-size="19" font-style="italic" text-anchor="middle" fill="#c47f00">q₀</text>
+
+    <!-- Einzelkraft F -->
+    <line x1="566" y1="86" x2="566" y2="192" stroke="#e2493b" stroke-width="4" stroke-linecap="round" marker-end="url(#fsArrow)"/>
+    <path d="M566 192 L560 178 L572 178 z" fill="#e2493b"/>
+    <text x="566" y="74" font-size="21" font-style="italic" text-anchor="middle" fill="#c0392b">F</text>
+
+    <!-- Balken -->
+    <rect x="132" y="198" width="496" height="18" rx="4" fill="url(#fsBeam)"/>
+    <line x1="132" y1="207" x2="628" y2="207" stroke="#ffffff" stroke-width="1.2" stroke-dasharray="8 7" opacity="0.55"/>
+
+    <!-- Festlager links -->
+    <path d="M140 218 L112 262 L168 262 z" fill="#ffffff" stroke="#006699" stroke-width="3" stroke-linejoin="round"/>
+    <circle cx="140" cy="218" r="4.6" fill="#006699"/>
+    <rect x="98" y="262" width="84" height="10" fill="url(#fsHatch)"/>
+    <line x1="98" y1="262" x2="182" y2="262" stroke="#006699" stroke-width="3"/>
+    <text x="140" y="296" font-size="14" text-anchor="middle">A</text>
+
+    <!-- Loslager rechts -->
+    <path d="M620 218 L594 254 L646 254 z" fill="#ffffff" stroke="#006699" stroke-width="3" stroke-linejoin="round"/>
+    <circle cx="620" cy="218" r="4.6" fill="#006699"/>
+    <circle cx="606" cy="262" r="8" fill="#ffffff" stroke="#006699" stroke-width="3"/>
+    <circle cx="634" cy="262" r="8" fill="#ffffff" stroke="#006699" stroke-width="3"/>
+    <rect x="578" y="270" width="84" height="10" fill="url(#fsHatch)"/>
+    <line x1="578" y1="270" x2="662" y2="270" stroke="#006699" stroke-width="3"/>
+    <text x="620" y="304" font-size="14" text-anchor="middle">B</text>
+
+    <!-- Maßkette -->
+    <g stroke="#5a6b7b" stroke-width="1.6">
+      <line x1="140" y1="222" x2="140" y2="340" stroke-dasharray="5 5" opacity="0.6"/>
+      <line x1="620" y1="226" x2="620" y2="340" stroke-dasharray="5 5" opacity="0.6"/>
+      <line x1="140" y1="330" x2="620" y2="330" marker-start="url(#fsDim)" marker-end="url(#fsDim)"/>
+    </g>
+    <rect x="348" y="316" width="64" height="26" rx="6" fill="#f4f9fc"/>
+    <text x="380" y="335" font-size="17" font-style="italic" text-anchor="middle">ℓ</text>
+
+    <!-- Momentenverlauf, der zurücklächelt -->
+    <line x1="132" y1="398" x2="628" y2="398" stroke="#5a6b7b" stroke-width="2"/>
+    <path d="M140 398 Q380 552 620 398 Z" fill="#f0a202" fill-opacity="0.16"/>
+    <path d="M140 398 Q380 552 620 398" fill="none" stroke="#f0a202" stroke-width="4.5" stroke-linecap="round"/>
+    <circle cx="286" cy="392" r="9.5" fill="#006699"/>
+    <circle cx="474" cy="392" r="9.5" fill="#006699"/>
+    <text x="112" y="404" font-size="17" font-style="italic" text-anchor="end">M(x)</text>
+    <text x="380" y="500" font-size="18" text-anchor="middle" fill="#c47f00" font-style="italic">M_max</text>
+
+    <!-- Gleichgewichtsbedingungen -->
+    <g font-size="15" fill="#33566d">
+      <rect x="34" y="452" width="176" height="72" rx="12" fill="#ffffff" stroke="#cfe0ec" stroke-width="2"/>
+      <text x="52" y="478">ΣF&#8339; = 0</text>
+      <text x="52" y="500">ΣF&#8341; = 0</text>
+      <text x="128" y="478">ΣM&#8317;&#8336;&#8318; = 0</text>
+      <text x="128" y="500" fill="#7d95a7">→ statisch best.</text>
+    </g>
+  </g>
+</svg>

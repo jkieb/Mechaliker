@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="Illustriertes Portrait einer Tutorin mit Dutt">
+  <defs><clipPath id="t3clip"><circle cx="100" cy="100" r="100"/></clipPath></defs>
+  <g clip-path="url(#t3clip)">
+    <rect width="200" height="200" fill="#e8f5ee"/>
+    <g stroke="#d2eade" stroke-width="2" fill="none">
+      <path d="M0 40H200M0 80H200M0 120H200M0 160H200M40 0V200M80 0V200M120 0V200M160 0V200"/>
+    </g>
+    <path d="M100 118c34 0 60 24 64 56v26H36v-26c4-32 30-56 64-56z" fill="#1f7a5c"/>
+    <path d="M100 118c8 0 16 1 23 4l-23 26-23-26c7-3 15-4 23-4z" fill="#ffffff" opacity="0.9"/>
+    <circle cx="100" cy="36" r="13" fill="#2b2118"/>
+    <ellipse cx="100" cy="84" rx="34" ry="38" fill="#c98d63"/>
+    <path d="M65 82c-3-30 15-44 35-44s38 14 35 44c-5-14-9-20-13-24-10 8-34 10-44 2-6 4-11 10-13 22z" fill="#2b2118"/>
+    <g fill="#0d1b2a"><circle cx="88" cy="84" r="3.8"/><circle cx="112" cy="84" r="3.8"/></g>
+    <path d="M89 101a13 13 0 0 0 22 0" fill="none" stroke="#8a4b33" stroke-width="3.4" stroke-linecap="round"/>
+  </g>
+  <circle cx="100" cy="100" r="98" fill="none" stroke="#1f7a5c" stroke-width="4"/>
+</svg>
