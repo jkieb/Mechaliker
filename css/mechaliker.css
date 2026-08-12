@@ -550,6 +550,71 @@ ul { margin: 0; padding: 0; list-style: none; }
 }
 .footer-bottom ul { display: flex; gap: 20px; flex-wrap: wrap; }
 
+/* ---------- 20b. Baustelle: Sperre und Hinweisbalken ----------
+   Die Sperre ist im HTML sichtbar angelegt und wird erst durch einen Klick
+   entfernt. Ohne JavaScript bleibt sie stehen – so ist sie eine echte
+   Barriere und nicht nur Dekoration. */
+.uc-banner {
+    background: repeating-linear-gradient(135deg, #f0a202 0 18px, #ffce5c 18px 36px);
+    color: #3b2a00; text-align: center; font-size: .86rem; font-weight: 700;
+    padding: 9px 18px; position: relative; z-index: 80;
+}
+.uc-banner span { background: rgba(255, 255, 255, .78); padding: 3px 12px; border-radius: 999px; }
+
+.uc-gate {
+    position: fixed; inset: 0; z-index: 200;
+    display: grid; place-items: center; padding: 24px;
+    background:
+        radial-gradient(760px 420px at 80% 10%, rgba(240, 162, 2, .22), transparent 60%),
+        var(--tu-blue-deep);
+    overflow-y: auto;
+}
+.uc-gate::after {
+    content: ""; position: absolute; inset: 0; pointer-events: none;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, .07) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, .07) 1px, transparent 1px);
+    background-size: 32px 32px;
+}
+.uc-passed .uc-gate { display: none; }
+html:not(.uc-passed), html:not(.uc-passed) body { overflow: hidden; }
+
+.uc-box {
+    position: relative; z-index: 2; max-width: 620px; width: 100%;
+    background: #fff; border-radius: var(--radius-l); padding: 44px 44px 38px;
+    box-shadow: var(--shadow-l); text-align: center;
+    border-top: 10px solid var(--gold);
+}
+.uc-gear {
+    width: 74px; height: 74px; margin: -74px auto 18px;
+    animation: uc-spin 9s linear infinite;
+    filter: drop-shadow(0 6px 14px rgba(13, 27, 42, .25));
+}
+@keyframes uc-spin { to { transform: rotate(360deg); } }
+
+.uc-kicker {
+    font-size: .78rem; font-weight: 700; letter-spacing: .22em; text-transform: uppercase;
+    color: var(--gold-dark); margin-bottom: 10px;
+}
+.uc-box h1 { font-size: clamp(1.7rem, 4vw, 2.4rem); margin-bottom: 14px; }
+.uc-box p { color: var(--muted); font-size: 1rem; }
+
+.uc-list {
+    text-align: left; display: grid; gap: 10px; margin: 24px 0 28px;
+    background: var(--tu-blue-mist); border: 1px solid var(--line);
+    border-radius: var(--radius); padding: 20px 22px; font-size: .94rem; color: var(--ink-2);
+}
+.uc-list li { display: flex; gap: 11px; align-items: flex-start; }
+.uc-list li::before { content: "🚧"; flex: 0 0 auto; }
+
+.uc-motto { margin-top: 22px; font-size: .88rem; }
+.uc-hint { margin-top: 14px; font-size: .8rem; color: var(--muted); }
+
+@media (max-width: 560px) {
+    .uc-box { padding: 34px 24px 30px; }
+    .uc-gear { width: 58px; height: 58px; margin: -58px auto 14px; }
+}
+
 /* ---------- 21. Nach-oben-Knopf ---------- */
 .to-top {
     position: fixed; right: 22px; bottom: 22px; z-index: 70;

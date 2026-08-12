@@ -7,6 +7,35 @@
 
     var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+    /* ---------- Baustellen-Sperre ---------- */
+    var gate = document.getElementById("ucGate");
+
+    if (gate && !document.documentElement.classList.contains("uc-passed")) {
+        var enterBtn = gate.querySelector("[data-uc-enter]");
+        var lastFocus = document.activeElement;
+
+        var openGate = function () {
+            try { sessionStorage.setItem("mechaliker-baustelle", "ok"); } catch (e) { /* egal */ }
+            document.documentElement.classList.add("uc-passed");
+            document.removeEventListener("keydown", trapFocus, true);
+            if (lastFocus && lastFocus.focus) { lastFocus.focus(); }
+        };
+
+        /* Solange die Sperre steht, bleibt der Fokus in ihr. */
+        function trapFocus(e) {
+            if (e.key === "Tab") {
+                e.preventDefault();
+                if (enterBtn) { enterBtn.focus(); }
+            }
+        }
+
+        if (enterBtn) {
+            enterBtn.addEventListener("click", openGate);
+            enterBtn.focus();
+        }
+        document.addEventListener("keydown", trapFocus, true);
+    }
+
     /* ---------- Mobiles Menü ---------- */
     var toggle = document.querySelector(".nav-toggle");
     var nav = document.getElementById("mainNav");

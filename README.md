@@ -13,6 +13,18 @@ Nachhilfe in Mechanik für TU, FH und HTL – Website unter dem Motto
 | `preise.html` | Pakete, Ermäßigungen, Fragen zur Zahlung |
 | `kontakt.html` | Anfrageformular, Kontaktdaten, Anfahrt, Impressum, Datenschutz |
 
+## Baustellen-Sperre
+
+Solange die Seite nicht fertig ist, liegt vor jeder Seite eine „Under Construction"-Sperre:
+ein Vollbild-Hinweis, der erklärt, dass alle Angaben Platzhalter sind, und der erst durch
+einen Klick auf *Trotzdem hineinschauen* verschwindet (gemerkt pro Browser-Sitzung via
+`sessionStorage`). Zusätzlich bleibt oben ein gestreifter Hinweisbalken stehen.
+
+Die Sperre steckt im HTML, nicht im Skript – ohne JavaScript bleibt sie also stehen.
+Zum Entfernen vor dem Livegang: in allen `*.html` den Block `<div class="uc-gate">…</div>`
+sowie `<div class="uc-banner">…</div>` löschen, dazu Abschnitt 20b in `css/mechaliker.css`
+und den Abschnitt „Baustellen-Sperre" in `js/mechaliker.js`.
+
 ## Technik
 
 - Statisches HTML, kein Build-Schritt, keine externen Abhängigkeiten (keine CDNs,
